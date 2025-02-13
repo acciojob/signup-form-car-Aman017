@@ -10,20 +10,18 @@
 	<!-- the entire body must be written by student -->
 <div>
 	<h2>submit form</h2>
-	<form method="post">
-		<label for="name">Name:</label>
-<input type="text" id="name" name="name" placeholder="name"> 
+	 <form method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <br><br>
 
-		<label >Gender:</label>
-		<input id=gender_m type="radio" name="gender" value="male" required>
-		<lable id="gander_m">Male</lable>
-		<input id=gender_f type="radio" name="gender" value="female" required>
-		<lable id="gander_f">Female</lable>
-		
-</div>
-	<br>
-	<div>
-		
+        <label>Gender:</label>
+        <input type="radio" id="gender_m" name="gender" value="male" required>
+        <label for="gender_m">Male</label>
+        <input type="radio" id="gender_f" name="gender" value="female" required>
+        <label for="gender_f">Female</label>
+        <br><br>
+
         <label for="cars">Car Brands:</label>
         <select id="cars" name="cars" required>
             <option value="" disabled selected>--Please choose an option--</option>
@@ -32,9 +30,10 @@
             <option value="ford">Ford</option>
             <option value="bmw">BMW</option>
         </select>
-	</div>
-		<button type="submit"> submit</button>
-	</form>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
